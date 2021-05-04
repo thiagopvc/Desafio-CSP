@@ -27,4 +27,6 @@ public class Contact {
 
     @Column(nullable = false)
     private String phone;
+
+    private String housePhone;
 }

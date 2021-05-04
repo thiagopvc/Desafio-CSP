@@ -41,6 +41,7 @@ public class ContactController {
                     updated.setLastName(contact.getLastName());
                     updated.setEmail(contact.getEmail());
                     updated.setPhone(contact.getPhone());
+                    updated.setHousePhone(contact.getHousePhone());
                     var update = contactRepository.save(updated);
                     return ResponseEntity.ok().body(update);
                 }).orElse(ResponseEntity.notFound().build());
